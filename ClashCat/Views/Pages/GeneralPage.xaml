@@ -1,0 +1,59 @@
+﻿<ui:UiPage x:Class="ClashCat.Views.Pages.GeneralPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:ClashCat.Views.Pages"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+    Title="DashboardPage"
+    d:DataContext="{d:DesignInstance local:GeneralPage, IsDesignTimeCreatable=False}"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    d:Background="{DynamicResource ApplicationBackgroundBrush}"
+    Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+    mc:Ignorable="d">
+    <ui:UiPage.Resources>
+        <BooleanToVisibilityConverter x:Key="cvt_bool2visibility"/>
+    </ui:UiPage.Resources>
+    
+    <Grid VerticalAlignment="Top">
+        <StackPanel Margin="20">
+            <Grid>
+                <TextBlock Style="{StaticResource FunctionLabelText}"
+                    Text="{DynamicResource StringPort}" HorizontalAlignment="Left"/>
+            </Grid>
+            <Grid Margin="0, 14, 0, 0">
+                <TextBlock Style="{StaticResource FunctionLabelText}"
+                    Text="{DynamicResource StringAllowLan}" HorizontalAlignment="Left"/>
+                <ui:ToggleSwitch HorizontalAlignment="Right"/>
+            </Grid>
+            <Grid Margin="0, 14, 0, 0">
+                <TextBlock Style="{StaticResource FunctionLabelText}"
+                    Text="{DynamicResource StringLogLevel}" HorizontalAlignment="Left"/>
+                <ComboBox HorizontalAlignment="Right">
+                    <ComboBoxItem Content="Silent"/>
+                    <ComboBoxItem Content="Warning"/>
+                </ComboBox>
+            </Grid>
+            <ui:Button Icon="Accessibility16">Active qwq</ui:Button>
+            <Button>qwq</Button>
+            <Grid Margin="0, 14, 0, 0">
+                <TextBlock Style="{StaticResource FunctionLabelText}"
+                    Text="{DynamicResource StringIPv6}" HorizontalAlignment="Left"/>
+                <ui:ToggleSwitch HorizontalAlignment="Right"/>
+            </Grid>
+            <Grid Margin="0, 14, 0, 0">
+                <TextBlock Style="{StaticResource FunctionLabelText}"
+                    Text="{DynamicResource StringClashCore}" HorizontalAlignment="Left"/>
+                <ui:Anchor Content="2022.06.19 Previum" HorizontalAlignment="Right"/>
+            </Grid>
+            <Button Click="Button_Click">Toggle popup</Button>
+            <Button Click="TestButton_Click">Test Button</Button>
+        </StackPanel>
+        <ui:Dialog Name="qwq" >
+            <StackPanel>
+                <Button>qweqfe</Button>
+            </StackPanel>
+        </ui:Dialog>
+    </Grid>
+</ui:UiPage>

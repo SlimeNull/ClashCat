@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <sys:String x:Key="StringGeneral">General</sys:String>
+    <sys:String x:Key="StringProxies">Proxies</sys:String>
+    <sys:String x:Key="StringProfiles">Profiles</sys:String>
+    <sys:String x:Key="StringLogs">Logs</sys:String>
+    <sys:String x:Key="StringConnections">Connections</sys:String>
+    <sys:String x:Key="StringSettings">Settings</sys:String>
+    <sys:String x:Key="StringFeedback">Feedback</sys:String>
+    
+    <sys:String x:Key="StringPort">Port</sys:String>
+    <sys:String x:Key="StringAllowLan">Allow LAN</sys:String>
+    <sys:String x:Key="StringLogLevel">Log Level</sys:String>
+    <sys:String x:Key="StringIPv6">IPv6</sys:String>
+    <sys:String x:Key="StringClashCore">Clash Core</sys:String>
+    <sys:String x:Key="StringHomeDirectory">Home Directory</sys:String>
+    <sys:String x:Key="StringUwpLoopback">UWP Loopback</sys:String>
+    <sys:String x:Key="StringTapDevice">TAP Device</sys:String>
+    <sys:String x:Key="StringServiceMode">Service Mode</sys:String>
+</ResourceDictionary>
